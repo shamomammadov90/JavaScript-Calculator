@@ -10,6 +10,16 @@ let firstDisplay = document.querySelector("#operation-display");
 let currentDisplay = document.querySelector("#total-display");
 let decimal = document.querySelector('.decimal');
 
+let headerText = document.querySelector('.headerText');
+let colorsArr = ["darkred", "yellow"];
+window.onload = function(){
+    setInterval(function(){
+        let randomNumber = Math.floor(Math.random() * colorsArr.length);
+        let colors = colorsArr[randomNumber];
+        headerText.style.color = colors;
+        console.log(randomNumber);
+    }, 500)
+}
 
 class Calculator {
     constructor(firstDisplay, currentDisplay){
