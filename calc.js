@@ -11,7 +11,7 @@ let currentDisplay = document.querySelector("#total-display");
 let decimal = document.querySelector('.decimal');
 
 let headerText = document.querySelector('.headerText');
-let colorsArr = ["darkred", "yellow"];
+let colorsArr = ["red", "blue"];
 window.onload = function(){
     setInterval(function(){
         let randomNumber = Math.floor(Math.random() * colorsArr.length);
