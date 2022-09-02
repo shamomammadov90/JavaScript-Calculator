@@ -62,7 +62,6 @@ class Calculator {
     appendNumber(number){
         if(number === "." && this.currentOperand.includes('.')) return;
         this.currentOperand = this.currentOperand.toString() + number.toString();
-        
     }
 
     chooseOperation(operation){
@@ -73,7 +72,6 @@ class Calculator {
         this.operation = operation;
         this.firstOperand = this.currentOperand;
         this.currentOperand = '';
-        
     }
 
     calc(){
